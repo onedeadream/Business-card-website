@@ -7,7 +7,7 @@ export const Posts = () => {
     const [loader, setLoader] = useState(false)
     const [totalCount, setTotalCount] = useState(0)
     console.log(totalCount)
-    
+
 
     async function fetchData() {
         setLoader(true)
@@ -17,14 +17,15 @@ export const Posts = () => {
         setPosts(page)
         setLoader(false)
     }
-    
+
     useEffect(() => {
         fetchData()
     }, [])
 
     return (
         <div className="post-block">
-            <p>{loader ? 'Загрузка..' : <Post posts={posts} totalCount={totalCount} setPosts={setPosts}/>}</p>
+            <p>{loader ? 'Загрузка...' : posts.length === 0 ?
+                'Посты не существуют' : <Post posts={posts} totalCount={totalCount} setPosts={setPosts} />}</p>
         </div>
     )
 }

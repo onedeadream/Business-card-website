@@ -10,7 +10,7 @@ const App = () => {
         
         <BrowserRouter>
             <div>
-                <Header title='Егор Щемеров'/>
+                <Header/>
             </div>
             <Routes>
                 <Route path="/" element={<Profile />}/>

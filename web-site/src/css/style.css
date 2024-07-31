@@ -12,6 +12,10 @@ body{
 }
 
 .header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
     background-color: rgb(238, 238, 238);
     color: black;
     padding: 25px 100px;
@@ -162,6 +166,7 @@ aside {
 .post-block {
     display: flex;
     flex-direction: column;
+    width: 100%;
     align-items: center;
 }
 
@@ -170,7 +175,7 @@ aside {
     flex-direction: row;
     gap: 20px;
     padding: 10px;
-    background-color: aquamarine;
+    background-color:white;
     margin: 10px;
     cursor: pointer;
 }
@@ -182,15 +187,22 @@ aside {
 
 .current-page-enable {
     padding: 10px;
-    background-color:rgb(32, 77, 62);
+    background-color: rgb(255, 219, 58);
+    border: 1px solid black;
     border-radius: 10px;
-    border: none;
     margin: 5px;
 }
 
 .current-page-disable {
     padding: 10px;
-    border: 1px solid rgb(127, 172, 255);
+    border: 1px solid black;
     border-radius: 10px;
     margin: 5px;
+    cursor: pointer;
+}
+
+.links-header {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
 }

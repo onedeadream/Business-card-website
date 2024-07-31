@@ -21,7 +21,7 @@ const Profile = () => {
     })
 
     return (
-        <Fade top>
+        <Fade right>
             <div className="container">
                 <div className="box">
                     <div className="header-bio">
